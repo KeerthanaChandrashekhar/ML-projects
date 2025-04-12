@@ -49,7 +49,7 @@ for k in k_values:
     class1_points = [test_data[i] for i in range(len(test_data)) if classified_labels[i] == "Class1"]
     class2_points = [test_data[i] for i in range(len(test_data)) if classified_labels[i] == "Class2"]
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(10, 6))           
     plt.scatter(train_data, [0] * len(train_data),
                 c=["blue" if label == "Class1" else "red" for label in train_labels],
                 label="Training Data", marker="o")
